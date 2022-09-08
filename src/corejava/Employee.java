@@ -1,28 +1,35 @@
 package corejava;
 
+/**
+ * Write a program to demonstrate the example of Parameterized constructor . 
+ * (E.g. Pass two integer parameters and apply any mathematical formula)..
+ * @author Darshit Patel
+ * @version 1.01 2022-09-07
+ */
+
 public class Employee {
 
-	int id;
-	String name;
+    int id;
+    String name;
 
-	// creating a parameterized constructor
-	Employee(int i, String n) {
-		id = i;
-		name = n;
-	}
+    // Creating a parameterized constructor
+    Employee(int i, String n) {
+        id = i;
+        name = n;
+    }
 
-	// method to display the value of id and name
-	void display() {
-		System.out.println(id + " " + name);
-	}
+    // Method to display the value of id and name
+    void display() {
+        System.out.println(id + " " + name);
+    }
 
-	public static void main(String args[]) {
-		// creating objects
-		Employee e1 = new Employee(1, "Darshit");
-		Employee e2 = new Employee(2, "Jay");
-		// displaying values of the object
-		e1.display();
-		e2.display();
-	}
+    public static void main(String args[]) {
+        // Creating objects
+        Employee employee = new Employee(1, "Darshit");
+        Employee employeedata = new Employee(2, "Jay");
+        // Displaying values of the object
+        employee.display();
+        employeedata.display();
+    }
 
 }

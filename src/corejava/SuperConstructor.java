@@ -1,25 +1,32 @@
 package corejava;
 
-/* superclass Bike */
+/**
+ * Write a program to demonstrate the super constructor.
+ * @author Darshit Patel
+ * @version 1.01 2022-09-07
+ */
+
+// Superclass Bike 
 class Bike {
-	Bike() {
-		System.out.println("Bike Is Created");
-	}
+    Bike() {
+        System.out.println("Bike Is Created");
+    }
 }
 
-/* subclass Honda extending the Bike class */
+// Subclass Honda extending the Bike class 
 class Honda extends Bike {
-	Honda() {
-		super();
-		System.out.println("Honda Is Created");
-	}
+    Honda() {
+        super();
+        System.out.println("Honda Is Created");
+    }
 
 }
 
-/* Driver program to SuperConstructor */
+// Driver program to SuperConstructor 
 public class SuperConstructor {
-	public static void main(String[] args) {
-		Honda h = new Honda();
-	}
+
+    public static void main(String[] args) {
+        Honda honda = new Honda();
+    }
 
 }

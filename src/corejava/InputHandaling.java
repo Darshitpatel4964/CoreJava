@@ -1,23 +1,24 @@
 package corejava;
 
-/**
-@author Darshit Patel
-@version 1.01 2022-09-07
-*/
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
+/**
+ * Write a program to read the data from a myTestFile file using input handling.
+ * @author Darshit Patel
+ * @version 1.01 2022-09-07
+ */
+
 public class InputHandaling {
-	public static void main(String[] args) throws FileNotFoundException {
-		File file = new File("D://myTestFile.txt");
-		Scanner sc = new Scanner(file);
 
-		// we just need to use \\Z as delimiter
-		sc.useDelimiter("\\Z");
+    public static void main(String[] args) throws FileNotFoundException {
+        File file = new File("D://myTestFile.txt");
+        Scanner scanner = new Scanner(file);
 
-		System.out.println(sc.next());
-	}
+        // We just need to use \\Z as delimiter
+        scanner.useDelimiter("\\Z");
+        System.out.println(scanner.next());
+    }
 
 }

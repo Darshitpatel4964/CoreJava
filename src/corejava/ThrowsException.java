@@ -1,34 +1,35 @@
 package corejava;
 
-/**
-@author Darshit Patel
-@version 1.01 2022-09-07
-*/
-
 import java.io.IOException;
+
+/**
+ * Write a program to handle exceptions using throws keywords.
+ * @author Darshit Patel
+ * @version 1.01 2022-09-07
+ */
 
 public class ThrowsException {
 
-	void m() throws IOException {
-		throw new IOException("error");// checked exception
-	}
+    void medium() throws IOException {
+        throw new IOException("error"); // Checked exception
+    }
 
-	void n() throws IOException {
-		m();
-	}
+    void average() throws IOException {
+        medium();
+    }
 
-	void p() {
-		try {
-			n();
-		} catch (Exception e) {
-			System.out.println("exception handled");
-		}
-	}
+    void hard() {
+        try {
+            average();
+        } catch (Exception e) {
+            System.out.println("exception handled");
+        }
+    }
 
-	public static void main(String args[]) {
-		ThrowsException obj = new ThrowsException();
-		obj.p();
-		System.out.println("normal exception");
-	}
+    public static void main(String args[]) {
+        ThrowsException obj = new ThrowsException();
+        obj.hard();
+        System.out.println("normal exception");
+    }
 
 }

@@ -1,17 +1,17 @@
 package corejava;
 
 /**
+ * Write a program to find the index of an array element.
  * @author Darshit Patel
  * @version 1.01 2022-09-07
  */
 
 public class Array {
+	
 	public static void main(String[] args) {
-
-		int[] numbers = { 4, 9, 7, 3, 2, 8 };
+		int[] numbers = {4, 9, 7, 3, 2, 8};
 		int element = 2;
 		int index = -1;
-
 		int i = 0;
 		while (i < numbers.length) {
 			if (numbers[i] == element) {
@@ -22,7 +22,7 @@ public class Array {
 		}
 
 		System.out.println("Index of " + element + " is : " + index);
-
 	}
 
 }
+	

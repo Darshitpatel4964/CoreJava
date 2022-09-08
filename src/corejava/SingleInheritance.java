@@ -1,28 +1,24 @@
 package corejava;
 
 /**
+ * Write a program of single inheritance.
+ * class Inherit the other Class is call single Inheritance
  * @author Darshit Patel
  * @version 1.01 2022-09-07
  */
 
-class One {
-	void print_a() {
-		System.out.println("Print A");
-	}
+class Worker {
+    float salary = 60000;
 }
 
-//class Inherit the other Class is call single Inheritance
-class Two extends One {
-	void print_b() {
-		System.out.println("Print B");
-	}
-}
-
-public class SingleInheritance {
-	public static void main(String[] args) {
-
-		Two t = new Two();
-		t.print_a();
-		t.print_b();
-	}
+class SingleInheritance extends Worker {
+    float bonus = 1500;
+    float fixSalary = salary + bonus;
+    
+    public static void main(String args[]) {
+        SingleInheritance object = new SingleInheritance();
+        System.out.println("Salary amount is:" + object.salary);
+        System.out.println(" Extra Bonous is:" + object.fixSalary);
+    }
+    
 }

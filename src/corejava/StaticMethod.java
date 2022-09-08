@@ -1,38 +1,46 @@
 package corejava;
 
+/**
+ * Write a program of Static method.
+ * @author Darshit Patel
+ * @version 1.01 2022-09-07
+ */
+
 class Professor {
-	int rollno;
-	String name;
-	static String college = "ITS";
+    int rollno;
+    String name;
+    static String college = "ITS";
 
-	// static method to change the value of static variable
-	static void change() {
-		college = "BBDIT";
-	}
+    // Static method to change the value of static variable
+    static void change() {
+        college = "BBDIT";
+    }
 
-	// constructor to initialize the variable
-	Professor(int r, String n) {
-		rollno = r;
-		name = n;
-	}
+    // Constructor to initialize the variable
+    Professor(int rno, String nm) {
+        rollno = rno;
+        name = nm;
+    }
 
-	// method to display values
-	void display() {
-		System.out.println(rollno + " " + name + " " + college);
-	}
+    // Method to display values
+    void display() {
+        System.out.println(rollno + " " + name + " " + college);
+    }
 }
 
 //Test class to create and display the values of object  
 public class StaticMethod {
-	public static void main(String args[]) {
-		Professor.change();// calling change method
-		// creating objects
-		Professor p1 = new Professor(111, "Karan");
-		Professor p2 = new Professor(222, "Aryan");
-		Professor p3 = new Professor(333, "Sonoo");
-		// calling display method
-		p1.display();
-		p2.display();
-		p3.display();
-	}
+
+    public static void main(String args[]) {
+        Professor.change(); // Calling change method
+        // Creating objects
+        Professor professorOne = new Professor(111, "Karan");
+        Professor professorTwo = new Professor(222, "Aryan");
+        Professor professorThree = new Professor(333, "Sonoo");
+        // Calling display method
+        professorOne.display();
+        professorTwo.display();
+        professorThree.display();
+    }
+
 }
