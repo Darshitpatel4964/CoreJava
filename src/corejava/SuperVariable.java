@@ -1,5 +1,3 @@
-package corejava;
-
 /**
  * Write a program to demonstrate the super variable.
  * @author Darshit Patel
@@ -7,22 +5,25 @@ package corejava;
  */
 
 class Animal {
+	
     String color = "white";
 }
 
 class Dog extends Animal {
+	
     String color = "black";
     void printColor() {
         System.out.println(color); // Prints color of Dog class
         System.out.println(super.color); // Prints color of Animal class
     }
+    
 }
 
 class SuperVariable {
 
     public static void main(String args[]) {
-        Dog dog = new Dog();
-        dog.printColor();
+        Dog color = new Dog();
+        color.printColor();
     }
 
 }

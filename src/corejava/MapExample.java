@@ -1,5 +1,3 @@
-package corejava;
-
 import java.util.HashMap;
 import java.util.Map;
 
@@ -13,17 +11,16 @@ public class MapExample {
 
     public static void main(String[] args) {
         // Creating object for map
-        Map < Integer, String > map = new HashMap < Integer, String > ();
+        Map < Integer, String > addMapElements = new HashMap < Integer, String > ();
 
         // Add Elements
-        map.put(1, "Darshit  Patel");
-        map.put(2, "Jay Pansuriya");
-        map.put(3, "Vasu Sheladiya");
+        addMapElements.put(1, "Darshit  Patel");
+        addMapElements.put(2, "Jay Pansuriya");
+        addMapElements.put(3, "Vasu Sheladiya");
 
         // Map elements traverse in any order
-        for (Map.Entry mapelement: map.entrySet()) {
-
-            System.out.println(mapelement.getKey() + " " + mapelement.getValue());
+        for (Map.Entry mapElement: addMapElements.entrySet()) {
+            System.out.println(mapElement.getKey() + " " + mapElement.getValue());
         }
     }
 

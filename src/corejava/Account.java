@@ -1,5 +1,3 @@
-package corejava;
-
 /**
  * Write a program to demonstrate encapsulation for bank account. 
  * @author Darshit Patel

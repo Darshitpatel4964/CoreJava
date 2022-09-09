@@ -1,5 +1,3 @@
- package corejava;
-
  /**
   * Write a program of Static Variable.
   * @author Darshit Patel
@@ -7,7 +5,8 @@
   */
 
  class Teacher {
-     int rollno; // Instance variable
+     
+	 int rollno; // Instance variable
      String name;
      static String college = "ITS"; // Static variable
 

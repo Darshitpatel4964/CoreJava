@@ -1,5 +1,3 @@
-package corejava;
-
 /**
  * Write a program of hybrid inheritance.
  * @author Darshit Patel
@@ -7,21 +5,28 @@ package corejava;
  */
 
 class Ability {
+	
     public void show() {
         System.out.println("I am a person, I can speak and run !");
     }
+    
 }
 
 interface Moveable {
+	
     public void run();
+    
 }
 
 interface Speakable {
+	
     public void speak();
+    
 }
 
 class Men extends Ability implements Moveable, Speakable {
-    @Override
+    
+	@Override
     public void run() {
         System.out.println("I can run !");
     }
@@ -30,15 +35,16 @@ class Men extends Ability implements Moveable, Speakable {
     public void speak() {
         System.out.println("I can speak !");
     }
+    
 }
 
 public class HybridInheritance {
 
     public static void main(String[] args) {
-        Men obj = new Men();
-        obj.run();
-        obj.speak();
-        obj.show();
+        Men person = new Men();
+        person.run();
+        person.speak();
+        person.show();
     }
 
 }

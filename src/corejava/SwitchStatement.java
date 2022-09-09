@@ -1,5 +1,3 @@
-package corejava;
-
 /**
  * Write a program to find the current month name from the given number of the switch case. 
  * @author Darshit Patel

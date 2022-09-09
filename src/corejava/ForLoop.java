@@ -1,5 +1,3 @@
-package corejava;
-
 /**
  * Write a program to demonstrate the example of the ‘for’ loop and print the pattern.
  * @author Darshit Patel

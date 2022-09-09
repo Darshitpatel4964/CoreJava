@@ -1,5 +1,3 @@
-package corejava;
-
 /**
  * write a program of hierarchical inheritance.
  * @author Darshit Patel
@@ -8,26 +6,32 @@ package corejava;
 
 //Two or More Class Inherits a single class
 class Vehicle {
+	
     double basePrice = 100000;
     public void showPrice() {
         System.out.println("The price of Vehicle is: Rs." + basePrice);
     }
+    
 }
 
 class TwoWheeler extends Vehicle {
+	
     double increasePriceBy = 0.20;
     void finalPrice() {
         basePrice = basePrice + (basePrice * increasePriceBy);
         System.out.println("After modification, The price of bike is: Rs." + basePrice);
     }
+    
 }
 
 class FourWheeler extends Vehicle {
+	
     double increasePriceBy = 1;
     void finalPrice() {
         basePrice = basePrice + (basePrice * increasePriceBy);
         System.out.println("After modification, The price of car is: Rs." + basePrice);
     }
+    
 }
 
 public class HierarchicalInheritance {

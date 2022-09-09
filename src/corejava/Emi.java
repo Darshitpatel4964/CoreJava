@@ -1,7 +1,3 @@
-package corejava;
-
-import java.util.*;
-
 /**
  * Apply EMI Calculator in Java - Java program to calculate EMI using Class, Object, Variables, Operators, and Datatypes. 
  * @author Darshit Patel
@@ -17,7 +13,6 @@ public class Emi {
         rate = rate / (12 * 100);
         time = time * 12;
         double emi = (principal * rate * Math.pow(1 + rate, time)) / (Math.pow(1 + rate, time) - 1);
-
         System.out.print(" EMI is= " + emi + "\n");
     }
 

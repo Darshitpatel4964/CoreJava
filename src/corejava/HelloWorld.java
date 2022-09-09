@@ -1,5 +1,3 @@
-package corejava;
-
 /**
  * Write a program to print hello world.
  * @author Darshit Patel
@@ -10,7 +8,6 @@ public class HelloWorld {
 
     public static void main(String[] args) {
         System.out.println("Hello World");
-
     }
 
 }

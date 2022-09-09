@@ -1,5 +1,3 @@
- package corejava;
-
 /**
  * Write a program to demonstrate the use of do while loop. 
  * (E.g print 1 to 10 numbers).

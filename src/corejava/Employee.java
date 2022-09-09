@@ -1,5 +1,3 @@
-package corejava;
-
 /**
  * Write a program to demonstrate the example of Parameterized constructor . 
  * (E.g. Pass two integer parameters and apply any mathematical formula)..
@@ -13,9 +11,9 @@ public class Employee {
     String name;
 
     // Creating a parameterized constructor
-    Employee(int i, String n) {
-        id = i;
-        name = n;
+    Employee(int id, String name) {
+        this.id = id;
+        this.name = name;
     }
 
     // Method to display the value of id and name

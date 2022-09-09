@@ -1,5 +1,3 @@
-package corejava;
-
 /**
  * Write a program to demonstrate the use of if / else statements. (E.g Define an 'age' variable and check your age).
  * @author Darshit Patel
@@ -9,12 +7,11 @@ package corejava;
 public class IfElseStatement {
 
     public static void main(String[] args) {
-
         //Creating two variables for age and weight    
     	int age = 22;
         int weight = 52;
 
-        //applying condition on age and weight    
+        //Applying condition on age and weight    
         if (age >= 18) {
             if (weight > 50) {
                 System.out.println("You are eligible to donate blood");

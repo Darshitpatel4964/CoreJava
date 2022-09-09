@@ -1,5 +1,3 @@
-package corejava;
-
 /**
  * Write a program to demonstrate the example of  default constructor.
  * @author Darshit Patel
@@ -7,7 +5,8 @@ package corejava;
  */
 
 public class Student {
-    int id;
+    
+	int id;
     String name;
 
     // Method to display the value of id and name

@@ -1,5 +1,3 @@
-package corejava;
-
 /**
  * Write a program of multilevel inheritance.
  * @author Darshit Patel
@@ -8,21 +6,27 @@ package corejava;
 
 // Chain Of Inheritance
 class Bicycle {
+	
     void speed() {
         System.out.println("Bicycle Speed Is");
     }
+    
 }
 
 class Toyota extends Bicycle {
+	
     void avg() {
         System.out.println("Toyota Average Is");
     }
+    
 }
 
 class Car extends Toyota {
+	
     void gear() {
         System.out.println("Car Gear Is");
     }
+    
 }
 
 public class MultilevelInheritance {

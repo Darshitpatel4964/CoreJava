@@ -1,5 +1,3 @@
-package corejava;
-
 /**
  * Write a program to find the index of an array element.
  * @author Darshit Patel
@@ -20,7 +18,6 @@ public class Array {
 			}
 			i++;
 		}
-
 		System.out.println("Index of " + element + " is : " + index);
 	}
 

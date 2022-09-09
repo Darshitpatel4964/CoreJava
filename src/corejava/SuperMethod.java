@@ -1,5 +1,3 @@
-package corejava;
-
 /**
  * Write a program to demonstrate the super method.
  * @author Darshit Patel
@@ -8,13 +6,16 @@ package corejava;
 
 // Base class Person 
 class Person {
+	
     void message() {
         System.out.println("This is person class");
     }
+    
 }
 
 // Subclass Department 
 class DepartMent extends Person {
+	
     void message() {
         System.out.println("This is DepartMent class");
     }
@@ -27,16 +28,16 @@ class DepartMent extends Person {
         // Will invoke or call parent class message() method
         super.message();
     }
+    
 }
 
 
 class SuperMethod {
 
     public static void main(String args[]) {
-        DepartMent department = new DepartMent();
-
-        // Calling display() of Student
-        department.display();
+        DepartMent personDepartment = new DepartMent();
+        // Calling display() of person Department
+        personDepartment.display();
     }
 
 }

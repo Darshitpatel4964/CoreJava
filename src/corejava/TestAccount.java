@@ -1,5 +1,3 @@
-package corejava;
-
 /**
  * Write a program to demonstrate encapsulation for bank account. 
  * @author Darshit Patel
@@ -9,17 +7,16 @@ package corejava;
 public class TestAccount {
 
     public static void main(String[] args) {
-
         // Creating instance of Account class
-        Account account = new Account();
+        Account accountDetails = new Account();
 
         // Setting values of setter methods
-        account.setAccountNo(123456789L);
-        account.setName("Darshit Patel");
-        account.setEmail("darshitpatel123@gmail.com");
+        accountDetails.setAccountNo(123456789L);
+        accountDetails.setName("Darshit Patel");
+        accountDetails.setEmail("darshitpatel123@gmail.com");
 
         // Getting values of getter methods
-        System.out.println(account.getAccountNo() + " " + account.getName() + " " + account.getEmail());
+        System.out.println(accountDetails.getAccountNo() + " " + accountDetails.getName() + " " + accountDetails.getEmail());
     }
 
 }

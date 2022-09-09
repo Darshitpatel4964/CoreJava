@@ -1,5 +1,3 @@
-package corejava;
-
 /**
  * Write a program to handle exceptions using finally keywords.
  * @author Darshit Patel
@@ -22,7 +20,6 @@ class FinallyException {
         finally {
             System.out.println("finally block is executed");
         }
-
         System.out.println("rest of phe code...");
     }
 

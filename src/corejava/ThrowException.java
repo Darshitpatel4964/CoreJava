@@ -1,5 +1,3 @@
-package corejava;
-
 /**
  * Write a program to handle exceptions using throw keywords.
  * @author Darshit Patel
@@ -7,7 +5,7 @@ package corejava;
  */
 
 public class ThrowException {
-    // Function to check if person is eligible to vote or not
+    
     public static void validate(int age) {
         if (age < 18) {
             // Throw Arithmetic exception if not eligible to vote

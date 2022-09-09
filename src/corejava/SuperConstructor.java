@@ -1,5 +1,3 @@
-package corejava;
-
 /**
  * Write a program to demonstrate the super constructor.
  * @author Darshit Patel
@@ -8,13 +6,16 @@ package corejava;
 
 // Superclass Bike 
 class Bike {
+	
     Bike() {
         System.out.println("Bike Is Created");
     }
+    
 }
 
 // Subclass Honda extending the Bike class 
 class Honda extends Bike {
+	
     Honda() {
         super();
         System.out.println("Honda Is Created");
@@ -26,7 +27,7 @@ class Honda extends Bike {
 public class SuperConstructor {
 
     public static void main(String[] args) {
-        Honda honda = new Honda();
+        Honda vehical = new Honda();
     }
 
 }

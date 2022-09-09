@@ -1,5 +1,3 @@
-package corejava;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedHashSet;
@@ -20,14 +18,14 @@ public class DuplicateElements {
         System.out.println("ArrayList with duplicate elements: " + duplicateList);
 
         // Convert the arraylist into a set
-        Set < String > set = new LinkedHashSet();
-        set.addAll(duplicateList);
+        Set < String > newList = new LinkedHashSet();
+        newList.addAll(duplicateList);
 
         // Delete all elements of arraylist
         duplicateList.clear();
 
         // Add element from set to arraylist
-        duplicateList.addAll(set);
+        duplicateList.addAll(newList);
         System.out.println("ArrayList without duplicate elements: " + duplicateList);
     }
 

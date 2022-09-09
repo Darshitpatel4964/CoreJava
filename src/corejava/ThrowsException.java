@@ -1,5 +1,3 @@
-package corejava;
-
 import java.io.IOException;
 
 /**
@@ -24,11 +22,12 @@ public class ThrowsException {
         } catch (Exception e) {
             System.out.println("exception handled");
         }
+        
     }
 
     public static void main(String args[]) {
-        ThrowsException obj = new ThrowsException();
-        obj.hard();
+        ThrowsException throwsException = new ThrowsException();
+        throwsException.hard();
         System.out.println("normal exception");
     }
 

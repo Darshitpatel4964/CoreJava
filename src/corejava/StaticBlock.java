@@ -1,5 +1,3 @@
-package corejava;
-
 /**
  * Write a program of Static block.
  * @author Darshit Patel

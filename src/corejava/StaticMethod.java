@@ -1,5 +1,3 @@
-package corejava;
-
 /**
  * Write a program of Static method.
  * @author Darshit Patel
@@ -7,6 +5,7 @@ package corejava;
  */
 
 class Professor {
+	
     int rollno;
     String name;
     static String college = "ITS";
@@ -26,6 +25,7 @@ class Professor {
     void display() {
         System.out.println(rollno + " " + name + " " + college);
     }
+    
 }
 
 //Test class to create and display the values of object  

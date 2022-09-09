@@ -1,5 +1,3 @@
-package corejava;
-
 import java.io.File;
 import java.util.Scanner;
 
@@ -13,11 +11,11 @@ public class LoopHandaling {
 
     public static void main(String[] args) throws Exception {
         // Pass the path to the file as a parameter
-        File file = new File("D://myTestFile.txt");
-        Scanner scanner = new Scanner(file);
+        File loopFile = new File("D://myTestFile.txt");
+        Scanner Scanner = new Scanner(loopFile);
 
-        while (scanner.hasNextLine())
-            System.out.println(scanner.nextLine());
+        while (Scanner.hasNextLine())
+            System.out.println(Scanner.nextLine());
     }
 
 }

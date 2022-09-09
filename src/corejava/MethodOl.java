@@ -1,12 +1,9 @@
-package corejava;
-
 /**
  * Write a program og method overloading by using changing the number of data type.
  * @author Darshit Patel
  * @version 1.01 2022-09-07
  */
 
-//By Changing the Data Type
 public class MethodOl {
 
     static int add(int a, int b) {

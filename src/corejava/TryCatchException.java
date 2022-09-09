@@ -1,7 +1,5 @@
-package corejava;
-
 /**
- *  Write a program to handle exceptions using throws keywords.
+ *  Write a program to handle exceptions using try-catch keywords.
  * @author Darshit Patel
  * @version 1.01 2022-09-07
  */

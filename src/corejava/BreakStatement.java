@@ -1,5 +1,3 @@
-package corejava;
-
 /**
  * Write a program to demonstrate the example of a break statement. 
  * E.g. Use the loop for 10 numbers and stop the execution after 7 numbers. 

@@ -1,5 +1,3 @@
-package corejava;
-
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -21,13 +19,13 @@ public class ExceptionHandling {
 
     private static String fileToString(String filePath) {
         StringBuilder stringBuilder = null;
-        BufferedReader br = null;
+        BufferedReader bufferReader = null;
 
         try {
-            br = new BufferedReader(new FileReader(filePath));
+        	bufferReader = new BufferedReader(new FileReader(filePath));
             stringBuilder = new StringBuilder();
             String currentLine;
-            while ((currentLine = br.readLine()) != null) {
+            while ((currentLine = bufferReader.readLine()) != null) {
                 stringBuilder.append(currentLine);
                 stringBuilder.append("\n");
             }
@@ -38,7 +36,7 @@ public class ExceptionHandling {
             ex2.printStackTrace();
         } finally {
             try {
-                br.close();
+            	bufferReader.close();
             } catch (IOException e) {
                 e.printStackTrace();
             }

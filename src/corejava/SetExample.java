@@ -1,5 +1,3 @@
-package corejava;
-
 import java.util.HashSet;
 import java.util.Set;
 
@@ -13,15 +11,15 @@ public class SetExample {
 
     public static void main(String[] args) {
         // Set demonstration using HashSet
-        Set < String > set = new HashSet < > ();
+        Set < String > addSetElements = new HashSet < > ();
 
         // Adding Elements
-        set.add("Darshit");
-        set.add("Patel");
-        set.add("Java Developer");
+        addSetElements.add("Darshit");
+        addSetElements.add("Patel");
+        addSetElements.add("Java Developer");
 
         // Set follow unordered Way
-        System.out.println(set);
+        System.out.println(addSetElements);
     }
 
 }

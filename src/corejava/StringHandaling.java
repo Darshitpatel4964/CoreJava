@@ -1,5 +1,3 @@
-package corejava;
-
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
@@ -18,8 +16,8 @@ public class StringHandaling {
     }
 
     public static void main(String[] args) throws Exception {
-        String data = readFileAsString("D://myTestFile.txt");
-        System.out.println(data);
+        String readStringFile = readFileAsString("D://myTestFile.txt");
+        System.out.println(readStringFile);
     }
 
 }

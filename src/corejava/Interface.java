@@ -1,5 +1,3 @@
-package corejava;
-
 /**
  * Write a program to demonstrate the interface.
  * @author Darshit Patel
@@ -7,11 +5,15 @@ package corejava;
  */
 
 interface Printable {
+	
     void print();
+    
 }
 
 interface Showable {
+	
     void show();
+    
 }
 
 class Interface implements Printable, Showable {
@@ -25,9 +27,9 @@ class Interface implements Printable, Showable {
     }
 
     public static void main(String[] args) {
-        Interface object = new Interface();
-        object.print();
-        object.show();
+        Interface interfaceObject = new Interface();
+        interfaceObject.print();
+        interfaceObject.show();
     }
 
 }

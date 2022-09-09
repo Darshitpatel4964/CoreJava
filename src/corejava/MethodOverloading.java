@@ -1,12 +1,9 @@
-package corejava;
-
 /**
  * Write a program of method overloading by using changing the number of arguments.
  * @author Darshit Patel
  * @version 1.01 2022-09-07
  */
 
-//By Changing the Number Of Argument
 class MethodOverloading {
 
     static int add(int a, int b) {
